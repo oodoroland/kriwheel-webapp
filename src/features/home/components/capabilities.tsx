@@ -7,7 +7,7 @@ const capabilities = [
     icon: "code",
     label: "Build",
     title: "Healthcare Software",
-    body: "Software designed around your actual workflows — not generic tools you have to bend to fit.",
+    body: "Software designed around your actual workflows - not generic tools you have to bend to fit.",
     examples: [
       "Clinic & hospital management systems",
       "Patient portals & booking platforms",

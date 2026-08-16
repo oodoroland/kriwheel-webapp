@@ -58,7 +58,7 @@ export function Channels() {
             <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
               <div className="max-w-xl">
                 <span className="font-mono text-xs font-bold text-secondary uppercase tracking-widest">
-                  01 — Recommended
+                  01 - Recommended
                 </span>
                 <h3 className="font-display text-2xl md:text-3xl font-bold text-white mt-4 mb-3">
                   Start a Project

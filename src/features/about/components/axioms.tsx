@@ -6,7 +6,7 @@ const axioms = [
     icon: "account_tree",
     iconBg: "bg-primary",
     title: "Solve the workflow, not the feature",
-    body: "We build around what you're actually trying to accomplish — not a checklist of features that look good in a demo.",
+    body: "We build around what you're actually trying to accomplish - not a checklist of features that look good in a demo.",
   },
   {
     icon: "hub",

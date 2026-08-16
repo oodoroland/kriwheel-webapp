@@ -14,7 +14,7 @@ export function Hero() {
           .
         </>
       }
-      description="Kriwheel designs, builds, and automates the systems behind modern healthcare organizations — from internal workflows and patient operations to integrations and custom software."
+      description="Kriwheel designs, builds, and automates the systems behind modern healthcare organizations - from internal workflows and patient operations to integrations and custom software."
       actions={
         <>
           <Button variant="accent" href="/consultation">

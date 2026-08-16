@@ -22,7 +22,7 @@ export function Problem() {
             Healthcare runs on parts that don’t talk to each other.
           </h2>
           <p className="text-on-surface-variant text-body-lg leading-relaxed">
-            Reception, records, labs, pharmacy, billing, follow-ups — each one
+            Reception, records, labs, pharmacy, billing, follow-ups - each one
             critical, each often on its own system. When they don’t connect,
             your team fills the gaps by hand, patients wait, and management
             loses visibility.

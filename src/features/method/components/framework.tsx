@@ -9,7 +9,7 @@ const stages = [
   {
     n: "01",
     title: "Understand",
-    purpose: "We map how your organization actually operates — the people, steps, and handoffs.",
+    purpose: "We map how your organization actually operates - the people, steps, and handoffs.",
     deliverable: "Workflow Map",
     impact: "Shared clarity",
   },

@@ -5,7 +5,7 @@ type PageHeroProps = {
   image: string;
   /** Small mono eyebrow label above the headline. */
   eyebrow: string;
-  /** Headline — accepts accent <span>s. */
+  /** Headline - accepts accent <span>s. */
   title: ReactNode;
   /** Optional supporting paragraph. */
   description?: string;

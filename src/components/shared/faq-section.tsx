@@ -18,7 +18,7 @@ type FaqSectionProps = {
 
 /**
  * The single source of truth for FAQs across the site. Two-column, single-open
- * accordion (opening one closes any other) with an optional CTA slot beneath —
+ * accordion (opening one closes any other) with an optional CTA slot beneath -
  * so every FAQ shares one design and every FAQ can end by moving the reader
  * toward the next action.
  */

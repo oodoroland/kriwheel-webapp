@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 /**
  * Single submission endpoint for both site forms. The `type` field discriminates
- * between the consultation booking and the general enquiry. No data is stored —
+ * between the consultation booking and the general enquiry. No data is stored -
  * each valid submission is emailed to CONTACT_TO_EMAIL via Resend.
  */
 
@@ -46,14 +46,14 @@ function buildEmail(
       return { error: "Name and organisation are required." };
     }
     return {
-      subject: `New consultation request — ${fullName}, ${organisation}`,
+      subject: `New consultation request - ${fullName}, ${organisation}`,
       replyTo: email,
       fields: [
         { label: "Full name", value: fullName },
         { label: "Organisation", value: organisation },
         { label: "Email", value: email },
-        { label: "Primary objective", value: str(body.objective) || "—" },
-        { label: "Strategic context", value: str(body.context) || "—" },
+        { label: "Primary objective", value: str(body.objective) || "-" },
+        { label: "Strategic context", value: str(body.context) || "-" },
       ],
     };
   }
@@ -66,13 +66,13 @@ function buildEmail(
       return { error: "Name, subject, and message are required." };
     }
     return {
-      subject: `New enquiry — ${subject}`,
+      subject: `New enquiry - ${subject}`,
       replyTo: email,
       fields: [
         { label: "Name", value: name },
-        { label: "Organisation", value: str(body.organisation) || "—" },
+        { label: "Organisation", value: str(body.organisation) || "-" },
         { label: "Email", value: email },
-        { label: "Phone", value: str(body.phone) || "—" },
+        { label: "Phone", value: str(body.phone) || "-" },
         { label: "Subject", value: subject },
         { label: "Message", value: message },
       ],
@@ -104,7 +104,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  // Honeypot — bots fill hidden fields; humans never see it. Silently accept.
+  // Honeypot - bots fill hidden fields; humans never see it. Silently accept.
   if (str(body.company_website)) {
     return NextResponse.json({ ok: true });
   }

@@ -38,7 +38,7 @@ export function Founder() {
           </h2>
           <blockquote className="font-body-lg text-body-lg italic text-on-surface-variant border-l-4 border-secondary pl-6 mb-8">
             “We started Kriwheel because we kept seeing healthcare teams held
-            back by disconnected tools and manual work — re-typing data, chasing
+            back by disconnected tools and manual work - re-typing data, chasing
             follow-ups, flying blind. Software should carry that load, not the
             staff.”
           </blockquote>

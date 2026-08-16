@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Discuss a Project",
   description:
-    "Book a discovery call with Kriwheel. In one focused session we map where manual work and disconnected systems are slowing your healthcare operations — and what to build, automate, or connect first.",
+    "Book a discovery call with Kriwheel. In one focused session we map where manual work and disconnected systems are slowing your healthcare operations - and what to build, automate, or connect first.",
 };
 
 export default function ConsultationPage() {

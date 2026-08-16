@@ -34,7 +34,7 @@ const details = [
   {
     icon: "location_on",
     label: "Location",
-    value: "Based in Lagos, Nigeria — delivered remotely and internationally.",
+    value: "Based in Lagos, Nigeria - delivered remotely and internationally.",
   },
 ];
 

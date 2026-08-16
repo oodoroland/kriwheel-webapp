@@ -14,7 +14,7 @@ export function MethodCta() {
           <span className="text-secondary italic">operations</span> need?
         </>
       }
-      description="Book a discovery call to map where manual work and disconnected tools are slowing you down — and what to build first."
+      description="Book a discovery call to map where manual work and disconnected tools are slowing you down - and what to build first."
       action={
         <Button
           variant="accent"

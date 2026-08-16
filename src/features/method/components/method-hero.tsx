@@ -16,7 +16,7 @@ export function MethodHero() {
           .
         </>
       }
-      description="A practical, engineering-led approach to building software that fits how healthcare teams actually operate — and keeps working long after launch."
+      description="A practical, engineering-led approach to building software that fits how healthcare teams actually operate - and keeps working long after launch."
       actions={
         <>
           <Button variant="accent" href="#methodology">

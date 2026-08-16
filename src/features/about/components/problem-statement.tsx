@@ -13,7 +13,7 @@ export function ProblemStatement() {
           </h2>
           <div className="space-y-6 font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
             <p>
-              Reception, records, labs, pharmacy, billing, follow-ups — each one
+              Reception, records, labs, pharmacy, billing, follow-ups - each one
               critical, each often on its own system. When they don’t connect,
               teams compensate with spreadsheets, phone calls, paper, and
               repetitive data entry.

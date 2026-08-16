@@ -62,7 +62,7 @@ export function BookingForm() {
                 Tell Us About Your Project
               </h2>
               <p className="text-on-surface-variant mt-4">
-                Share where the friction is — we’ll help you map what to build
+                Share where the friction is - we’ll help you map what to build
                 first.
               </p>
             </div>
@@ -161,7 +161,7 @@ export function BookingForm() {
                         <option>Build custom software</option>
                         <option>Automate a workflow</option>
                         <option>Connect / integrate systems</option>
-                        <option>Not sure yet — let’s talk</option>
+                        <option>Not sure yet - let’s talk</option>
                       </select>
                       <Icon
                         name="expand_more"
@@ -216,7 +216,7 @@ export function BookingForm() {
         open={modalOpen}
         onClose={() => setModalOpen(false)}
         title="Request received"
-        message="Thanks — we've got your project details. We'll be in touch personally, usually within 24 hours."
+        message="Thanks - we've got your project details. We'll be in touch personally, usually within 24 hours."
       />
     </section>
   );

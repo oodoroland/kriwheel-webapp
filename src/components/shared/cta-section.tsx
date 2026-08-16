@@ -5,7 +5,7 @@ import { Reveal } from "@/components/shared/reveal";
 type CtaSectionProps = {
   /** Optional anchor id (e.g. "consultation"). */
   id?: string;
-  /** Headline — accepts accent <span>s to highlight key words. */
+  /** Headline - accepts accent <span>s to highlight key words. */
   title: ReactNode;
   /** Supporting paragraph. */
   description: string;

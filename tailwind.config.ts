@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 /**
- * ROCODEIFY Intelligence System — canonical brand tokens.
+ * ROCODEIFY Intelligence System - canonical brand tokens.
  * Source of truth: zeedocs/brandguide.md. Keep the two in sync.
  *
  * Font families reference CSS variables injected by next/font (see src/lib/fonts.ts):
@@ -41,7 +41,7 @@ const config: Config = {
         // Outlines
         outline: "#74777d",
         "outline-variant": "#c4c6cd",
-        // Primary — Midnight Navy
+        // Primary - Midnight Navy
         primary: "#0b1f33",
         "on-primary": "#ffffff",
         "primary-container": "#0b1f33",
@@ -51,7 +51,7 @@ const config: Config = {
         "primary-fixed-dim": "#b5c8e3",
         "on-primary-fixed": "#081d30",
         "on-primary-fixed-variant": "#36485e",
-        // Secondary — Medical Teal (primary accent)
+        // Secondary - Medical Teal (primary accent)
         secondary: "#0f766e",
         "on-secondary": "#ffffff",
         "secondary-container": "#ccfbf1",
@@ -60,7 +60,7 @@ const config: Config = {
         "secondary-fixed-dim": "#bcc7de",
         "on-secondary-fixed": "#111c2d",
         "on-secondary-fixed-variant": "#3c475a",
-        // Tertiary — Medical Teal
+        // Tertiary - Medical Teal
         tertiary: "#000605",
         "on-tertiary": "#ffffff",
         "tertiary-container": "#002320",

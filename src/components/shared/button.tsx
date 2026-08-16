@@ -8,10 +8,10 @@ type Size = "sm" | "md" | "lg";
  * The single source of truth for buttons across the site. Every page uses
  * these variants so the design never drifts between routes.
  *
- *  primary — dark navy fill (nav / compact actions)
- *  accent  — Medical Teal fill (main CTAs)
- *  ghost   — translucent outline for use on DARK backgrounds
- *  outline — bordered light button for use on LIGHT backgrounds
+ *  primary - dark navy fill (nav / compact actions)
+ *  accent  - Medical Teal fill (main CTAs)
+ *  ghost   - translucent outline for use on DARK backgrounds
+ *  outline - bordered light button for use on LIGHT backgrounds
  */
 const base =
   "inline-flex items-center justify-center rounded-eight font-display font-bold transition-all";
@@ -45,7 +45,7 @@ type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> &
   StyleProps & { href: string };
 
 /**
- * Renders a real `<button>` by default, or a Next `Link` when `href` is set —
+ * Renders a real `<button>` by default, or a Next `Link` when `href` is set -
  * both share the exact same styling so a linked CTA never drifts from a plain
  * one.
  */

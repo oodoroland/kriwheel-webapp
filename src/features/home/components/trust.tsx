@@ -45,7 +45,7 @@ export function Trust() {
           </h2>
           <p className="text-white/60 mt-4 text-body-lg leading-relaxed">
             Healthcare software needs more than ordinary development. We earn
-            trust through engineering — not marketing claims.
+            trust through engineering - not marketing claims.
           </p>
         </Reveal>
 

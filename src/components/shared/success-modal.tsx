@@ -12,7 +12,7 @@ type SuccessModalProps = {
 };
 
 /**
- * Confirmation dialog shown after a form submits successfully — unmissable
+ * Confirmation dialog shown after a form submits successfully - unmissable
  * regardless of scroll position. Shared so both forms confirm identically.
  */
 export function SuccessModal({

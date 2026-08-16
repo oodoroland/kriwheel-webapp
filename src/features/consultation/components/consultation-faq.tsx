@@ -4,7 +4,7 @@ import { FaqSection, type FaqItem } from "@/components/shared/faq-section";
 const faqs: FaqItem[] = [
   {
     q: "Is this a sales call or an actual working session?",
-    a: "It's a genuine strategy session. We spend the time diagnosing the friction in your digital patient journey — you leave with specific findings whether or not we work together afterward.",
+    a: "It's a genuine strategy session. We spend the time diagnosing the friction in your digital patient journey - you leave with specific findings whether or not we work together afterward.",
   },
   {
     q: "How long does it take, and who should attend?",
@@ -12,7 +12,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "What will we walk away with?",
-    a: "A clear read on where patients are dropping off, the highest-impact opportunities, and a prioritised set of next steps — practical enough to act on immediately.",
+    a: "A clear read on where patients are dropping off, the highest-impact opportunities, and a prioritised set of next steps - practical enough to act on immediately.",
   },
   {
     q: "Do we need to prepare anything?",
@@ -37,7 +37,7 @@ export function ConsultationFaq() {
       cta={
         <div className="flex flex-col items-center gap-4">
           <p className="text-on-surface-variant">
-            No preparation needed — most leaders book first and bring their
+            No preparation needed - most leaders book first and bring their
             questions to the session.
           </p>
           <Button variant="accent" href="#booking">

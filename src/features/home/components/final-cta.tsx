@@ -14,7 +14,7 @@ export function FinalCta() {
           <span className="text-secondary italic">operations</span> need.
         </>
       }
-      description="Tell us where the manual work and disconnected tools are slowing you down. We’ll help you map what to build first — no obligation."
+      description="Tell us where the manual work and disconnected tools are slowing you down. We’ll help you map what to build first - no obligation."
       action={
         <Button
           variant="accent"

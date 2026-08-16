@@ -26,7 +26,7 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        {/* Material Symbols is an icon font, not a text font — next/font
+        {/* Material Symbols is an icon font, not a text font - next/font
             doesn't support it, so a stylesheet link is the correct load path. */}
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link

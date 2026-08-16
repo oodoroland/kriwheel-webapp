@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Our Approach",
   description:
-    "How Kriwheel builds healthcare software — a practical, engineering-led approach that turns fragmented workflows into connected, automated systems.",
+    "How Kriwheel builds healthcare software - a practical, engineering-led approach that turns fragmented workflows into connected, automated systems.",
 };
 
 export default function MethodPage() {

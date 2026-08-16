@@ -51,7 +51,7 @@ export function Insights() {
                 </h3>
                 <p className="text-on-surface-variant text-body-md leading-relaxed mb-6">
                   Where manual work and disconnected tools quietly drain time,
-                  money, and visibility from growing healthcare organizations —
+                  money, and visibility from growing healthcare organizations -
                   and what to fix first.
                 </p>
                 <div className="mt-auto flex items-center gap-2 font-bold text-primary text-sm group-hover:gap-4 transition-all">

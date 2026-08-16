@@ -5,7 +5,7 @@ const pillars = [
     label: "OUR MISSION",
     title:
       "To help healthcare organizations operate better through thoughtful software, automation, and connected technology.",
-    body: "We don't chase trends. We solve concrete operational problems — the repetitive work, the disconnected tools, the gaps your team fills by hand.",
+    body: "We don't chase trends. We solve concrete operational problems - the repetitive work, the disconnected tools, the gaps your team fills by hand.",
   },
   {
     label: "OUR VISION",

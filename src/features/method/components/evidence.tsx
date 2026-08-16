@@ -5,7 +5,7 @@ const blocks = [
   {
     icon: "hub",
     title: "Systems thinking",
-    body: "We consider how every part of your operation connects — not just the feature in front of us.",
+    body: "We consider how every part of your operation connects - not just the feature in front of us.",
   },
   {
     icon: "code",
@@ -45,7 +45,7 @@ export function Evidence() {
 
           <Reveal delay={200} className="relative">
             <div className="aspect-square rounded-eight p-8 flex flex-col justify-between relative overflow-hidden border border-white/10">
-              {/* Engineering image — treated to sit in the dark section */}
+              {/* Engineering image - treated to sit in the dark section */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Engineering at work"

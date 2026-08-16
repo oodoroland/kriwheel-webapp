@@ -1,7 +1,7 @@
 import { Manrope, Inter, JetBrains_Mono } from "next/font/google";
 
 /**
- * Self-hosted via next/font — zero layout shift, no render-blocking request,
+ * Self-hosted via next/font - zero layout shift, no render-blocking request,
  * no external Google call at runtime. Exposed as CSS variables consumed by
  * the Tailwind fontFamily tokens (see tailwind.config.ts).
  *

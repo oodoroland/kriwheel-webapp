@@ -43,7 +43,7 @@ export function Challenge() {
             Why Organizations Start Here
           </h2>
           <p className="text-white/60 text-lg mb-12 max-w-xl">
-            Most teams don’t need more software — they need their systems to work
+            Most teams don’t need more software - they need their systems to work
             together. That starts with understanding where the friction actually
             is.
           </p>

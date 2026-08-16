@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/shared/reveal";
 
 const steps = [
-  { n: "01", title: "Understand", body: "We map how your organization actually works — the people, steps, and handoffs." },
+  { n: "01", title: "Understand", body: "We map how your organization actually works - the people, steps, and handoffs." },
   { n: "02", title: "Design", body: "We design systems around your workflows, not the other way round." },
   { n: "03", title: "Build", body: "We engineer software that holds up under real operational load." },
   { n: "04", title: "Automate", body: "We remove the repetitive work that slows your team down." },

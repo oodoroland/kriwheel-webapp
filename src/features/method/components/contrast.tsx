@@ -47,7 +47,7 @@ export function Contrast() {
                 The Legacy Approach
               </h3>
               <p className="text-on-surface-variant mb-8">
-                Most agencies build features, not systems — configuring generic
+                Most agencies build features, not systems - configuring generic
                 tools that force your team to adapt.
               </p>
               <div className="space-y-6">
@@ -91,7 +91,7 @@ export function Contrast() {
                   The Kriwheel Approach
                 </h3>
                 <p className="text-white/70 mb-8">
-                  We start with your workflows and build systems around them —
+                  We start with your workflows and build systems around them -
                   engineered to connect, automate, and last.
                 </p>
                 <div className="grid md:grid-cols-2 gap-8">

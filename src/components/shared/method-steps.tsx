@@ -11,7 +11,7 @@ const steps = [
 
 /**
  * The six Kriwheel Method™ step cards (with connector line). Shared so every
- * page presents identical card items — pages supply their own section heading.
+ * page presents identical card items - pages supply their own section heading.
  */
 export function MethodSteps() {
   return (
