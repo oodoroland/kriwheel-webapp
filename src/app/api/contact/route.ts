@@ -15,6 +15,11 @@ function str(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";
 }
 
+
+function cleanEnv(value: string | undefined): string {
+  return (value ?? "").trim().replace(/^["']|["']$/g, "").trim();
+}
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
@@ -109,9 +114,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: built.error }, { status: 400 });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
-  const from = process.env.CONTACT_FROM_EMAIL ?? "Kriwheel <onboarding@resend.dev>";
+  const apiKey = cleanEnv(process.env.RESEND_API_KEY);
+  const to = cleanEnv(process.env.CONTACT_TO_EMAIL);
+  const from =
+    cleanEnv(process.env.CONTACT_FROM_EMAIL) ||
+    "Kriwheel <onboarding@resend.dev>";
 
   if (!apiKey || !to) {
     console.error("Contact form: RESEND_API_KEY or CONTACT_TO_EMAIL is not set.");
