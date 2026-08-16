@@ -10,7 +10,7 @@ import { SuccessModal } from "@/components/shared/success-modal";
 import { submitContactForm } from "@/lib/submit-contact-form";
 
 const inputClasses =
-  "w-full px-6 py-4 rounded-eight bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none";
+  "w-full px-4 py-3 sm:px-6 sm:py-4 text-base rounded-eight bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none";
 const labelClasses =
   "font-mono text-xs font-bold text-on-surface-variant uppercase tracking-widest block mb-2";
 
@@ -56,7 +56,7 @@ export function BookingForm() {
     <section id="booking" className="py-unit-2xl md:py-unit-4xl bg-background">
       <div className="max-w-4xl mx-auto px-gutter">
         <Reveal>
-          <div className="bg-white rounded-eight border border-outline-variant/30 shadow-xl p-unit-xl md:p-unit-2xl">
+          <div className="bg-white rounded-eight border border-outline-variant/30 shadow-xl p-6 sm:p-unit-xl md:p-unit-2xl">
             <div className="text-center mb-unit-xl">
               <h2 className="font-display text-4xl font-bold text-primary">
                 Tell Us About Your Project

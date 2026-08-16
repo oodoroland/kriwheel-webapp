@@ -10,7 +10,7 @@ import { SuccessModal } from "@/components/shared/success-modal";
 import { submitContactForm } from "@/lib/submit-contact-form";
 
 const inputClasses =
-  "w-full px-6 py-4 rounded-eight bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none";
+  "w-full px-4 py-3 sm:px-6 sm:py-4 text-base rounded-eight bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none";
 const labelClasses =
   "font-mono text-xs font-bold text-on-surface-variant uppercase tracking-widest block mb-2";
 
@@ -70,7 +70,7 @@ export function EnquiryForm() {
         </Reveal>
 
         <Reveal>
-          <div className="bg-white rounded-eight border border-outline-variant/30 shadow-xl p-unit-xl md:p-unit-2xl">
+          <div className="bg-white rounded-eight border border-outline-variant/30 shadow-xl p-6 sm:p-unit-xl md:p-unit-2xl">
             {status === "success" ? (
               <div className="flex flex-col items-center text-center gap-4 py-unit-lg">
                 <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center">
