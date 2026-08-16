@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+
+import { SiteHeader } from "@/components/layout/site-header";
+import { SiteFooter } from "@/components/layout/site-footer";
+import {
+  Channels,
+  ContactCta,
+  ContactFaq,
+  ContactHero,
+  ContactInfo,
+  EnquiryForm,
+} from "@/features/contact";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Start the right conversation with Rocodeify — general enquiries, partnerships, media & speaking, and existing-client support. For strategic guidance, book a Strategy Consultation.",
+};
+
+export default function ContactPage() {
+  return (
+    <>
+      <SiteHeader />
+      <main>
+        <ContactHero />
+        <Channels />
+        <ContactInfo />
+        <EnquiryForm />
+        <ContactFaq />
+        <ContactCta />
+      </main>
+      <SiteFooter />
+    </>
+  );
+}

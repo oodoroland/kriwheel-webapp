@@ -1,0 +1,9 @@
+export { AboutHero } from "./components/about-hero";
+export { ProblemStatement } from "./components/problem-statement";
+export { MissionVision } from "./components/mission-vision";
+export { Axioms } from "./components/axioms";
+export { AboutMethod } from "./components/about-method";
+export { Audiences } from "./components/audiences";
+export { Founder } from "./components/founder";
+export { Commitment } from "./components/commitment";
+export { AboutCta } from "./components/about-cta";
