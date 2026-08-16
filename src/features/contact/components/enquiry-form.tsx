@@ -84,7 +84,7 @@ export function EnquiryForm() {
                   Message received.
                 </h3>
                 <p className="text-on-surface-variant max-w-md">
-                  We aim to respond within one to two business days.
+                  We’ll get back to you personally, usually within 24 hours.
                 </p>
                 <Link
                   href="/method"
@@ -212,7 +212,7 @@ export function EnquiryForm() {
         open={modalOpen}
         onClose={() => setModalOpen(false)}
         title="Message sent"
-        message="Thank you for reaching out. We aim to respond within one to two business days."
+        message="Thanks for reaching out. We’ll get back to you personally, usually within 24 hours."
       />
     </section>
   );

@@ -80,7 +80,7 @@ export function BookingForm() {
                   Your request is in.
                 </h3>
                 <p className="text-on-surface-variant max-w-md">
-                  We’ll be in touch soon.
+                  We’ll be in touch personally, usually within 24 hours.
                 </p>
                 <Link
                   href="/method"
@@ -216,7 +216,7 @@ export function BookingForm() {
         open={modalOpen}
         onClose={() => setModalOpen(false)}
         title="Request received"
-        message="Thank you. Someone from our team will reach out within two business days to talk through your project."
+        message="Thanks — we've got your project details. We'll be in touch personally, usually within 24 hours."
       />
     </section>
   );
