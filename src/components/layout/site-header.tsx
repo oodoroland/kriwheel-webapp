@@ -41,10 +41,17 @@ export function SiteHeader() {
       >
         <Link
           href="/"
-          className="font-display text-2xl font-extrabold tracking-tighter text-primary"
+          aria-label={`${siteConfig.name} home`}
+          className="flex items-center"
         >
-          {siteConfig.name}
-          <span className="text-secondary">™</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/Kriwheel_logo.png"
+            alt={siteConfig.name}
+            className={`w-auto transition-all duration-500 ${
+              scrolled ? "h-9" : "h-12"
+            }`}
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-unit-xl">

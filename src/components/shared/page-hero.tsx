@@ -65,12 +65,12 @@ export function PageHero({
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-gutter hidden md:block">
-        <div className="flex flex-col gap-4">
+      <div className="absolute bottom-10 right-gutter hidden md:block">
+        <div className="flex flex-col items-center gap-4">
           <span className="text-white/20 text-xs font-mono uppercase tracking-widest [writing-mode:vertical-lr] rotate-180">
             {scrollLabel}
           </span>
-          <div className="w-[1px] h-20 bg-gradient-to-b from-secondary to-transparent mx-auto" />
+          <div className="w-[1px] h-16 bg-gradient-to-b from-secondary to-transparent mx-auto" />
         </div>
       </div>
     </section>

@@ -14,8 +14,6 @@ const blocks = [
   },
 ];
 
-const bars = ["70%", "45%", "88%"];
-
 export function Evidence() {
   return (
     <section id="evidence" className="py-unit-2xl md:py-unit-4xl bg-primary text-white overflow-hidden">
@@ -46,39 +44,34 @@ export function Evidence() {
           </Reveal>
 
           <Reveal delay={200} className="relative">
-            {/* Diagnosis matrix visualizer */}
-            <div className="aspect-square glass-morphic rounded-eight p-8 flex flex-col justify-between relative overflow-hidden">
+            <div className="aspect-square rounded-eight p-8 flex flex-col justify-between relative overflow-hidden border border-white/10">
+              {/* Engineering image — treated to sit in the dark section */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt="Engineering at work"
+                src="/images/engineering.jpg"
+                className="absolute inset-0 w-full h-full object-cover filter grayscale contrast-105 brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
+              <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-primary/70 to-transparent" />
               <div className="absolute inset-0 method-grid opacity-10" />
+
               <div className="flex justify-between items-center relative z-10">
-                <span className="font-mono text-[10px] tracking-widest uppercase opacity-40">
+                <span className="font-mono text-[10px] tracking-widest uppercase opacity-50">
                   How We Build
                 </span>
                 <span className="px-2 py-1 bg-secondary/20 rounded text-secondary font-mono text-[10px]">
                   ARCHITECTURE
                 </span>
               </div>
-              <div className="flex-1 flex items-center justify-center relative z-10">
-                <div className="w-full space-y-6">
-                  {bars.map((w, i) => (
-                    <div
-                      key={i}
-                      className="h-1 w-full bg-white/10 rounded-full overflow-hidden"
-                    >
-                      <div
-                        className="h-full bg-secondary transition-all duration-1000"
-                        style={{ width: w }}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
+
               <div className="grid grid-cols-2 gap-4 relative z-10">
-                <div className="p-4 bg-white/5 rounded-eight border border-white/5">
-                  <p className="text-[10px] opacity-40 mb-1">SECURITY</p>
+                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-eight border border-white/10">
+                  <p className="text-[10px] opacity-50 mb-1">SECURITY</p>
                   <p className="font-mono text-xl">Built in</p>
                 </div>
-                <div className="p-4 bg-white/5 rounded-eight border border-white/5">
-                  <p className="text-[10px] opacity-40 mb-1">CODE</p>
+                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-eight border border-white/10">
+                  <p className="text-[10px] opacity-50 mb-1">CODE</p>
                   <p className="font-mono text-xl">Yours</p>
                 </div>
               </div>

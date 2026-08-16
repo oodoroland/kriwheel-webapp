@@ -27,10 +27,18 @@ export function SiteFooter() {
     <footer className="bg-primary pt-unit-4xl pb-unit-lg border-t border-white/5">
       <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-unit-xl">
         <div className="md:col-span-5">
-          <span className="font-display text-3xl font-extrabold tracking-tighter text-white block mb-6">
-            {siteConfig.name}
-            <span className="text-secondary">™</span>
-          </span>
+          <Link
+            href="/"
+            aria-label={`${siteConfig.name} home`}
+            className="inline-block mb-6"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/Kriwheel_white_logo.png"
+              alt={siteConfig.name}
+              className="h-12 w-auto"
+            />
+          </Link>
           <p className="text-white/40 text-body-md max-w-sm mb-8 leading-relaxed">
             {siteConfig.description}
           </p>

@@ -74,8 +74,8 @@ export function Challenge() {
           <div className="aspect-[4/5] rounded-eight overflow-hidden border border-white/20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt=""
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu9B1hP2QKQf8dUWa4cCEpyccPinywGLXfZhcCtvFIOBljcVC0y93WOO6On3IUUBacraJSEc8uNguBAIfEbr4PMdt388FnQMgkMXAERJX3pl2tPgBpfHDgosrBd6G_5buDpPnwLEfBqJoCDA717DFYtLejphu1c-6IuTISuv5v1ZGbbgOaJuRpEmzW7_d3AfZQgX67aSyWlnn3lg70ZMoTaHk9non5WSHHH0kFHshtCWuP9_VlleayoiZJ5FwUIdIFDlr6-Tay9zw"
+              alt="Fragmented healthcare workflows unified into one connected system"
+              src="/images/systems.jpg"
               className="w-full h-full object-cover"
             />
           </div>

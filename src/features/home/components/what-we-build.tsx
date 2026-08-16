@@ -6,21 +6,21 @@ import { Reveal } from "@/components/shared/reveal";
 const builds = [
   {
     badge: "Build",
-    src: "/images/hospital1.jpg",
+    src: "/images/healthcare_scheduling.jpg",
     title: "Clinic & Hospital Operations",
     body: "Platforms that run scheduling, records, and day-to-day workflows in one connected place.",
     delay: 0,
   },
   {
     badge: "Automate",
-    src: "/images/hospital2.jpg",
+    src: "/images/apointment_scheduling.png",
     title: "Automated Patient Communication",
     body: "Reminders, follow-ups, and updates that run on their own instead of by hand.",
     delay: 200,
   },
   {
     badge: "Connect",
-    src: "/images/hospital3.jpg",
+    src: "/images/connected.jpg",
     title: "Connected Systems & Integrations",
     body: "Payments, labs, pharmacy, and records synced so information moves without re-entry.",
     delay: 400,
