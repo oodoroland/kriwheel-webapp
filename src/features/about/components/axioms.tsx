@@ -3,35 +3,35 @@ import { Reveal } from "@/components/shared/reveal";
 
 const axioms = [
   {
-    icon: "architecture",
+    icon: "account_tree",
     iconBg: "bg-primary",
-    title: "Strategy before Technology",
-    body: "Tools are commodities. Insight is proprietary. We never write a line of code until the strategic blueprint is airtight.",
+    title: "Solve the workflow, not the feature",
+    body: "We build around what you're actually trying to accomplish — not a checklist of features that look good in a demo.",
   },
   {
-    icon: "biotech",
+    icon: "hub",
     iconBg: "bg-secondary",
-    title: "Research before Assumptions",
-    body: "We live in the data. We observe patient behavior, analyze friction points, and build on evidence, not intuition.",
+    title: "Connect the moving parts",
+    body: "We prefer coherent systems over isolated tools that don't talk. Information should move without being re-typed.",
   },
   {
-    icon: "clinical_notes",
+    icon: "shield",
     iconBg: "bg-primary",
-    title: "Patient First, Always",
-    body: "Digital efficiency is meaningless if it compromises patient trust. Every experience is centered on the human at the other end.",
+    title: "Earn trust through engineering",
+    body: "Security, reliability, and data integrity aren't add-ons. In healthcare, they're the foundation everything else sits on.",
   },
 ];
 
 export function Axioms() {
   return (
-    <section className="py-unit-4xl bg-surface">
+    <section className="py-unit-2xl md:py-unit-4xl bg-surface">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="text-center mb-unit-3xl">
           <span className="font-label-caps text-label-caps text-secondary mb-4 block">
-            OUR CORE PHILOSOPHY
+            OUR PRINCIPLES
           </span>
           <h2 className="font-headline-lg text-headline-lg text-primary">
-            The Rocodeify Axioms
+            How We Build
           </h2>
         </Reveal>
 

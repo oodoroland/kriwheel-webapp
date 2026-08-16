@@ -5,21 +5,22 @@ export function AboutHero() {
   return (
     <PageHero
       image="/images/screen1.png"
-      eyebrow="Intelligence Before Creativity"
+      eyebrow="Healthcare Technology & Automation"
       scrollLabel="Scroll to Explore"
       title={
         <>
-          We Believe Great Healthcare Deserves Great{" "}
-          <span className="text-secondary italic">Digital Experiences</span>.
+          We build the technology that keeps healthcare{" "}
+          <span className="text-secondary italic">moving</span>.
         </>
       }
+      description="Kriwheel is a healthcare technology company. We build software, automate workflows, and connect the systems healthcare organizations depend on."
       actions={
         <>
           <Button variant="accent" href="/method">
-            Explore the Method™
+            How We Work
           </Button>
           <Button variant="ghost" href="/#cases">
-            See Our Work
+            See What We Build
           </Button>
         </>
       }

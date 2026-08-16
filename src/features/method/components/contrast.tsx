@@ -3,36 +3,36 @@ import { Reveal } from "@/components/shared/reveal";
 
 const legacyPoints = [
   {
-    title: "Vendor-First Selection",
-    body: "Choosing tech stacks based on marketing hype rather than clinical fit.",
+    title: "Feature-first, not workflow-first",
+    body: "Building screens before understanding how work actually flows.",
   },
   {
-    title: "Linear Implementation",
-    body: "Ignoring feedback loops between patients and healthcare providers.",
+    title: "Generic tools, forced fit",
+    body: "Off-the-shelf software your team has to work around.",
   },
 ];
 
 const methodPoints = [
   {
-    title: "Deep Audit",
-    body: "4-week clinical observation phase to map friction.",
+    title: "Workflow-first",
+    body: "We map how you actually operate before we build.",
   },
   {
-    title: "Patient Trust UX",
-    body: "Design that signals authority and safety.",
+    title: "Engineered to connect",
+    body: "Systems designed to integrate and automate, not just look good.",
   },
 ];
 
 export function Contrast() {
   return (
-    <section className="py-unit-4xl method-mesh relative">
+    <section className="py-unit-2xl md:py-unit-4xl method-mesh relative">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="mb-20">
           <span className="font-mono text-xs font-bold text-secondary uppercase tracking-widest">
             The Contrast
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-4">
-            Why Digital Projects Fail.
+            Why Healthcare Software Fails.
           </h2>
         </Reveal>
 
@@ -47,8 +47,8 @@ export function Contrast() {
                 The Legacy Approach
               </h3>
               <p className="text-on-surface-variant mb-8">
-                Most agencies prioritize high-fidelity visuals over
-                high-fidelity understanding.
+                Most agencies build features, not systems — configuring generic
+                tools that force your team to adapt.
               </p>
               <div className="space-y-6">
                 {legacyPoints.map((point) => (
@@ -79,7 +79,7 @@ export function Contrast() {
             </div>
           </div>
 
-          {/* Rocodeify card */}
+          {/* Kriwheel card */}
           <Reveal delay={200} className="lg:col-span-6">
             <div className="h-full p-10 bg-primary text-white rounded-eight shadow-2xl shadow-primary/20 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 blur-[100px]" />
@@ -88,11 +88,11 @@ export function Contrast() {
                   <Icon name="auto_awesome" />
                 </div>
                 <h3 className="font-display text-2xl font-bold mb-6">
-                  The Rocodeify Method™
+                  The Kriwheel Approach
                 </h3>
                 <p className="text-white/70 mb-8">
-                  We derive strategy from clinical observation to ensure adoption
-                  before a pixel is drawn.
+                  We start with your workflows and build systems around them —
+                  engineered to connect, automate, and last.
                 </p>
                 <div className="grid md:grid-cols-2 gap-8">
                   {methodPoints.map((point) => (

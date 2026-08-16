@@ -12,9 +12,9 @@ import {
 } from "@/features/method";
 
 export const metadata: Metadata = {
-  title: "The Rocodeify Method™",
+  title: "Our Approach",
   description:
-    "A precision-engineered consulting framework designed to eliminate clinical friction and accelerate digital patient adoption.",
+    "How Kriwheel builds healthcare software — a practical, engineering-led approach that turns fragmented workflows into connected, automated systems.",
 };
 
 export default function MethodPage() {

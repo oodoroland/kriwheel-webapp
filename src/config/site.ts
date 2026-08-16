@@ -4,9 +4,10 @@ export const siteConfig = {
   description:
     "Kriwheel builds software, automation, and digital systems that help healthcare organizations operate more efficiently, connect their workflows, and deliver better experiences for patients.",
   nav: [
-    { label: "Our Approach", href: "#methodology" },
-    { label: "Insights", href: "#insights" },
-    { label: "Cases", href: "#cases" },
-    { label: "Talk to Us", href: "#consultation" },
+    { label: "Home", href: "/" },
+    { label: "Our Approach", href: "/method" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ],
+  cta: { label: "Discuss a Project", href: "/consultation" },
 } as const;

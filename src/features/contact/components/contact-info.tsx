@@ -7,8 +7,8 @@ const details = [
   {
     icon: "mail",
     label: "Email Address",
-    value: "hello@rocodeify.com",
-    href: "mailto:hello@rocodeify.com",
+    value: "hello@kriwheel.com",
+    href: "mailto:hello@kriwheel.com",
   },
   {
     icon: "schedule",
@@ -28,8 +28,8 @@ const details = [
   {
     icon: "link",
     label: "LinkedIn",
-    value: "linkedin.com/company/rocodeify",
-    href: "https://linkedin.com/company/rocodeify",
+    value: "linkedin.com/company/kriwheel",
+    href: "https://linkedin.com/company/kriwheel",
   },
   {
     icon: "location_on",
@@ -40,7 +40,7 @@ const details = [
 
 export function ContactInfo() {
   return (
-    <section className="py-unit-4xl bg-surface-container/30">
+    <section className="py-unit-2xl md:py-unit-4xl bg-surface-container/30">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="mb-unit-2xl">
           <span className="font-mono text-xs font-bold text-secondary uppercase tracking-widest">

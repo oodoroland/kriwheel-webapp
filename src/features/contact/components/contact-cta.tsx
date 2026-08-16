@@ -9,14 +9,14 @@ export function ContactCta() {
     <CtaSection
       title={
         <>
-          Looking for{" "}
-          <span className="text-secondary italic">Strategic Guidance</span>?
+          Have a{" "}
+          <span className="text-secondary italic">project</span> in mind?
         </>
       }
-      description="If your goal is to improve patient experience, strengthen digital trust, or plan a healthcare digital transformation, the best place to begin is with a Strategy Consultation."
+      description="If you’re looking to build software, automate a workflow, or connect your systems, the best place to begin is a short discovery call."
       action={
         <Button variant="accent" size="lg" href="/consultation" className="w-full sm:w-auto">
-          Book Strategy Consultation
+          Discuss a Project
         </Button>
       }
       secondary={
@@ -24,8 +24,7 @@ export function ContactCta() {
           href="/method"
           className="text-white/50 hover:text-white font-mono text-sm tracking-widest transition-colors flex items-center gap-2"
         >
-          EXPLORE THE ROCODEIFY METHOD™{" "}
-          <Icon name="arrow_forward" className="text-sm" />
+          SEE HOW WE WORK <Icon name="arrow_forward" className="text-sm" />
         </Link>
       }
     />

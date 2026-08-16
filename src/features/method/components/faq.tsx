@@ -3,20 +3,20 @@ import { FaqSection, type FaqItem } from "@/components/shared/faq-section";
 
 const faqs: FaqItem[] = [
   {
-    q: "How is this different from hiring a traditional web agency?",
-    a: "Traditional agencies often begin with the website. We begin with research, diagnosis, and strategy to understand the business problem before deciding what should be built, improved, or transformed.",
+    q: "How is this different from a generic software agency?",
+    a: "Generic agencies build features and configure off-the-shelf tools. We start with your workflows and build systems around how you actually operate — with the automation and integrations to match.",
   },
   {
-    q: "Does the Method work for small clinics as well as larger organisations?",
-    a: "Yes. The methodology scales to the organisation's size, goals, and complexity. The principles stay the same; the depth of research and implementation is tailored to the situation.",
+    q: "Does this work for small clinics as well as larger organisations?",
+    a: "Yes. The approach scales to your size, goals, and complexity. The principles stay the same; the depth of the build is tailored to the situation.",
   },
   {
-    q: "What if we already have a website?",
-    a: "That's often where we begin. The goal isn't automatically to replace what exists, but to identify where digital friction, trust gaps, or missed opportunities are affecting patient experience and performance.",
+    q: "What if we already have systems in place?",
+    a: "That's often where we begin. The goal isn't to rip out what works — it's to connect it, automate around it, and fill the gaps that force your team to work by hand.",
   },
   {
-    q: "Is this methodology only for website projects?",
-    a: "No. The Method can guide broader digital initiatives — patient communication, automation, digital transformation, and long-term strategic planning.",
+    q: "Is this only for building new software?",
+    a: "No. The same approach covers automation, integrations, and connecting the tools you already depend on — not just building from scratch.",
   },
 ];
 
@@ -29,11 +29,11 @@ export function Faq() {
       cta={
         <div className="flex flex-col items-center gap-4">
           <p className="text-on-surface-variant">
-            The clearest way to see how the Method applies to your organisation
-            is a short strategy session.
+            The clearest way to see how this applies to your organisation is a
+            short discovery call.
           </p>
           <Button variant="accent" href="/consultation#booking">
-            Book a Strategy Session
+            Discuss a Project
           </Button>
         </div>
       }

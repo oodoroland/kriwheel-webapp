@@ -3,30 +3,30 @@ import { Reveal } from "@/components/shared/reveal";
 
 const outcomes = [
   {
-    icon: "analytics",
-    title: "Positioning Clarity",
-    body: "Understanding how you rank against the modern digital patient expectation.",
+    icon: "account_tree",
+    title: "A clear picture of your operations",
+    body: "Where manual work and disconnected tools are quietly costing you time.",
   },
   {
-    icon: "map",
-    title: "Strategic Direction",
-    body: "A clear priority list of where to invest your next digital dollar.",
+    icon: "list_alt",
+    title: "What to build first",
+    body: "A prioritized list of what's worth building, automating, or connecting.",
   },
   {
-    icon: "diversity_1",
-    title: "Patient Empathy Map",
-    body: "A breakdown of the friction points causing patient drop-off.",
+    icon: "route",
+    title: "A practical plan",
+    body: "Realistic scope and sequencing for an implementation that fits your team.",
   },
   {
-    icon: "bolt",
-    title: "Immediate Wins",
-    body: "3 tactical changes you can implement immediately to improve trust.",
+    icon: "handshake",
+    title: "An honest answer",
+    body: "A straight take on whether custom software is even the right move for you.",
   },
 ];
 
 export function Outcomes() {
   return (
-    <section className="py-unit-4xl bg-background">
+    <section className="py-unit-2xl md:py-unit-4xl bg-background">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal>
           <div className="bg-surface-container/30 rounded-eight p-unit-xl md:p-unit-3xl border border-outline-variant/30">

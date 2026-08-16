@@ -3,8 +3,8 @@ import { FaqSection, type FaqItem } from "@/components/shared/faq-section";
 
 const faqs: FaqItem[] = [
   {
-    q: "Which page should I use if I want strategic advice?",
-    a: "If you're looking for guidance on improving your healthcare organisation's digital experience, we recommend booking a Strategy Consultation rather than submitting a general enquiry.",
+    q: "Which page should I use if I want to start a project?",
+    a: "If you're looking to build software, automate a workflow, or connect your systems, we recommend booking a discovery call rather than submitting a general enquiry.",
   },
   {
     q: "How quickly will you respond?",
@@ -37,10 +37,10 @@ export function ContactFaq() {
       cta={
         <div className="flex flex-col items-center gap-4">
           <p className="text-on-surface-variant">
-            Looking for strategic guidance rather than a general question?
+            Have a project in mind rather than a general question?
           </p>
           <Button variant="accent" href="/consultation">
-            Book a Strategy Consultation
+            Discuss a Project
           </Button>
         </div>
       }

@@ -3,15 +3,15 @@ import { Reveal } from "@/components/shared/reveal";
 
 const sideArticles = [
   {
-    kicker: "WHITE PAPER",
-    title: "The UX of Clinical Confidence",
-    body: "How interface design directly impacts perceived medical authority and patient trust metrics.",
+    kicker: "PRACTICAL GUIDE",
+    title: "Automating Patient Follow-ups",
+    body: "How to replace manual reminder calls with reliable workflows your team can trust.",
     delay: 200,
   },
   {
-    kicker: "EXECUTIVE OPINION",
-    title: "Bridging the Gap: CMO & Intelligence",
-    body: "Why modern medical marketing requires a dedicated strategic intelligence partner to scale effectively.",
+    kicker: "ENGINEERING NOTE",
+    title: "Build vs. Buy Healthcare Software",
+    body: "When a custom system pays off, and when an off-the-shelf tool is the right call.",
     delay: 400,
   },
 ];
@@ -22,10 +22,11 @@ export function Insights() {
       <div className="max-w-container-max mx-auto px-gutter">
         <div className="mb-unit-2xl">
           <h2 className="font-display text-4xl md:text-5xl text-primary font-bold tracking-tight">
-            Strategic Intelligence
+            Field Notes
           </h2>
           <p className="text-on-surface-variant mt-4 text-body-lg">
-            Executive briefings on the future of healthcare strategy.
+            Practical thinking on healthcare operations, automation, and
+            building software that lasts.
           </p>
         </div>
 
@@ -43,15 +44,15 @@ export function Insights() {
               </div>
               <div className="md:w-1/2 p-unit-lg flex flex-col justify-center">
                 <span className="text-secondary font-mono text-[10px] tracking-[0.2em] uppercase font-bold mb-4 block">
-                  RESEARCH REPORT / 2024
+                  OPERATIONS REPORT
                 </span>
                 <h3 className="font-display text-3xl text-primary font-bold mb-4 group-hover:text-secondary transition-colors">
-                  The Digital Patient Sentiment Index
+                  The Operational Cost of Disconnected Systems
                 </h3>
                 <p className="text-on-surface-variant text-body-md leading-relaxed mb-6">
-                  Analyzing over 2 million digital patient interactions to
-                  uncover the new drivers of institutional trust and clinical
-                  intent.
+                  Where manual work and disconnected tools quietly drain time,
+                  money, and visibility from growing healthcare organizations —
+                  and what to fix first.
                 </p>
                 <div className="mt-auto flex items-center gap-2 font-bold text-primary text-sm group-hover:gap-4 transition-all">
                   READ THE BRIEF <Icon name="arrow_right_alt" className="text-sm" />

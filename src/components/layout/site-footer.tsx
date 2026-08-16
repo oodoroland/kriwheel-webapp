@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { siteConfig } from "@/config/site";
+
 const footerGroups = [
   {
     heading: "Platform",
@@ -26,11 +28,11 @@ export function SiteFooter() {
       <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-unit-xl">
         <div className="md:col-span-5">
           <span className="font-display text-3xl font-extrabold tracking-tighter text-white block mb-6">
-            Rocodeify<span className="text-secondary">™</span>
+            {siteConfig.name}
+            <span className="text-secondary">™</span>
           </span>
           <p className="text-white/40 text-body-md max-w-sm mb-8 leading-relaxed">
-            Intelligence Before Creativity. The global standard for high-intent
-            healthcare strategy and digital institutional growth.
+            {siteConfig.description}
           </p>
           <div className="flex gap-4">
             <a
@@ -84,10 +86,10 @@ export function SiteFooter() {
 
       <div className="max-w-container-max mx-auto px-gutter mt-unit-3xl pt-unit-md border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-white/20 text-xs font-mono">
-          © 2024 Rocodeify Healthcare Consulting. All rights reserved.
+          © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
-        <p className="text-white/20 text-xs font-mono">
-          INTELLIGENCE BEFORE CREATIVITY
+        <p className="text-white/20 text-xs font-mono uppercase">
+          {siteConfig.tagline}
         </p>
       </div>
     </footer>

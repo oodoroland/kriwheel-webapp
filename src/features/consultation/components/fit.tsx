@@ -3,35 +3,35 @@ import { Reveal } from "@/components/shared/reveal";
 
 const audiences = [
   {
-    icon: "stethoscope",
-    title: "Specialist Clinics",
+    icon: "medical_services",
+    title: "Clinics & Practices",
     points: [
-      "High-value elective surgeries or chronic care.",
-      "Need to automate pre-consultation trust.",
+      "Growing patient volume outpacing manual processes.",
+      "Several disconnected tools, spreadsheets, and WhatsApp.",
     ],
   },
   {
-    icon: "domain",
-    title: "Private Hospitals",
+    icon: "biotech",
+    title: "Diagnostic Centers & Labs",
     points: [
-      "Large-scale patient intake and facility tours.",
-      "Looking for digital cohesion across departments.",
+      "High appointment and results volume to coordinate.",
+      "Data that needs to move cleanly between systems.",
     ],
     featured: true,
   },
   {
-    icon: "biotech",
-    title: "Diagnostic Centers",
+    icon: "medication",
+    title: "Pharmacies & Health Startups",
     points: [
-      "High-volume, low-friction digital scheduling.",
-      "Requirement for clear, technical result delivery.",
+      "Manual workflows that don't scale with growth.",
+      "Need software built around how you actually work.",
     ],
   },
 ];
 
 export function Fit() {
   return (
-    <section className="py-unit-4xl bg-surface-container/30">
+    <section className="py-unit-2xl md:py-unit-4xl bg-surface-container/30">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="text-center mb-unit-2xl">
           <h2 className="font-display text-4xl font-bold text-primary">

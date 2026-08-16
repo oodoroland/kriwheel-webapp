@@ -4,19 +4,20 @@ const pillars = [
   {
     label: "OUR MISSION",
     title:
-      "To architect digital systems that reflect the precision of modern medicine.",
-    body: "We don't just build websites; we design clinical-grade digital environments where every interaction is calculated for impact and empathy.",
+      "To help healthcare organizations operate better through thoughtful software, automation, and connected technology.",
+    body: "We don't chase trends. We solve concrete operational problems — the repetitive work, the disconnected tools, the gaps your team fills by hand.",
   },
   {
     label: "OUR VISION",
-    title: "To become the global standard for strategic digital healthcare.",
-    body: "Where 'Digital' is no longer a department, but a foundational pillar of the patient outcome strategy.",
+    title:
+      "A healthcare ecosystem where technology connects the people, processes, and systems that make care possible.",
+    body: "Where staff aren't held back by software, and information moves cleanly between the systems healthcare runs on.",
   },
 ];
 
 export function MissionVision() {
   return (
-    <section className="py-unit-4xl bg-primary text-white overflow-hidden relative">
+    <section className="py-unit-2xl md:py-unit-4xl bg-primary text-white overflow-hidden relative">
       <div className="max-w-container-max mx-auto px-gutter relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-unit-3xl">
           {pillars.map((pillar) => (

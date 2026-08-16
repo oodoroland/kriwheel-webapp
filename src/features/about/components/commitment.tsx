@@ -4,37 +4,37 @@ import { Reveal } from "@/components/shared/reveal";
 const commitments = [
   {
     icon: "verified_user",
-    title: "HIPAA & GDPR",
-    body: "Privacy is foundational, not optional. Full compliance in every pixel.",
+    title: "Data Protection",
+    body: "Access control and privacy built into every system, not bolted on later.",
   },
   {
-    icon: "analytics",
+    icon: "database",
     title: "Data Integrity",
-    body: "Ensuring the clean, secure flow of patient data across all platforms.",
+    body: "Accurate, consistent data moving cleanly between the systems you rely on.",
   },
   {
-    icon: "accessibility_new",
-    title: "Universal Access",
-    body: "WCAG 2.1 AAA compliance for truly inclusive patient care.",
+    icon: "monitoring",
+    title: "Reliability",
+    body: "Systems built to keep running under real operational load.",
   },
   {
-    icon: "speed",
-    title: "Zero Latency",
-    body: "Performance optimized for critical care environments.",
+    icon: "settings_suggest",
+    title: "Maintainability",
+    body: "Software built to evolve with your organization, not lock you in.",
   },
 ];
 
 export function Commitment() {
   return (
-    <section className="py-unit-4xl bg-primary text-white">
+    <section className="py-unit-2xl md:py-unit-4xl bg-primary text-white">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="max-w-3xl mx-auto text-center mb-unit-3xl">
           <h2 className="font-headline-lg text-headline-lg mb-6">
-            The Rocodeify Commitment
+            The Kriwheel Commitment
           </h2>
           <p className="text-white/70">
-            Our standards are non-negotiable. Every partnership is held to the
-            highest tier of clinical and digital compliance.
+            Healthcare software has to be trusted with real operations and real
+            data. These standards aren’t optional for us.
           </p>
         </Reveal>
 

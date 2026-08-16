@@ -1,16 +1,16 @@
 import { Reveal } from "@/components/shared/reveal";
 
 const steps = [
-  { n: "01", title: "Deep Research", body: "Quantifying patient behavior and market intent." },
-  { n: "02", title: "Gap Diagnosis", body: "Identifying specific friction points in your current model." },
-  { n: "03", title: "Strategy", body: "Architecting the premium digital ecosystem." },
-  { n: "04", title: "Experience", body: "High-fidelity interface design and UX optimization." },
-  { n: "05", title: "Execution", body: "Agile implementation and clinical team training." },
-  { n: "06", title: "Optimization", body: "Continuous refinement through data intelligence." },
+  { n: "01", title: "Understand", body: "We map how your organization actually operates today." },
+  { n: "02", title: "Design", body: "We design systems around your workflows, not the reverse." },
+  { n: "03", title: "Build", body: "We engineer software that holds up under real load." },
+  { n: "04", title: "Automate", body: "We remove the repetitive work slowing your team down." },
+  { n: "05", title: "Integrate", body: "We connect the tools and data you already rely on." },
+  { n: "06", title: "Support", body: "We keep systems reliable as your organization grows." },
 ];
 
 /**
- * The six Rocodeify Method™ step cards (with connector line). Shared so every
+ * The six Kriwheel Method™ step cards (with connector line). Shared so every
  * page presents identical card items — pages supply their own section heading.
  */
 export function MethodSteps() {

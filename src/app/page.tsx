@@ -1,14 +1,14 @@
-import { MethodSection } from "@/components/shared/method-section";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import {
-  CaseStudies,
+  Capabilities,
   FinalCta,
   Hero,
-  Impact,
+  HowWeWork,
   Insights,
-  Opportunities,
-  PatientJourney,
+  Problem,
+  Trust,
+  WhatWeBuild,
 } from "@/features/home";
 
 export default function HomePage() {
@@ -17,11 +17,11 @@ export default function HomePage() {
       <SiteHeader />
       <main>
         <Hero />
-        <PatientJourney />
-        <Opportunities />
-        <Impact />
-        <MethodSection />
-        <CaseStudies />
+        <Problem />
+        <Capabilities />
+        <HowWeWork />
+        <WhatWeBuild />
+        <Trust />
         <Insights />
         <FinalCta />
       </main>

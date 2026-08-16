@@ -9,12 +9,12 @@ export function MethodCta() {
     <CtaSection
       title={
         <>
-          Ready to Audit Your
+          Ready to build the system your
           <br />
-          <span className="text-secondary italic">Patient Journey</span>?
+          <span className="text-secondary italic">operations</span> need?
         </>
       }
-      description="Schedule a consultation with a senior strategist to identify the friction points in your current digital infrastructure."
+      description="Book a discovery call to map where manual work and disconnected tools are slowing you down — and what to build first."
       action={
         <Button
           variant="accent"
@@ -22,7 +22,7 @@ export function MethodCta() {
           href="/consultation#booking"
           className="w-full sm:w-auto"
         >
-          Book Strategy Session
+          Discuss a Project
         </Button>
       }
       secondary={

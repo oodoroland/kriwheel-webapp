@@ -9,11 +9,11 @@ export function AboutCta() {
     <CtaSection
       title={
         <>
-          Ready to evolve your digital{" "}
-          <span className="text-secondary italic">patient journey</span>?
+          Ready to build the system your{" "}
+          <span className="text-secondary italic">operations</span> need?
         </>
       }
-      description="Join the cohort of strategic healthcare leaders shaping the future of patient care."
+      description="Tell us where the manual work and disconnected tools are slowing you down. We’ll help you map what to build first."
       action={
         <Button
           variant="accent"
@@ -21,7 +21,7 @@ export function AboutCta() {
           href="/consultation#booking"
           className="w-full sm:w-auto"
         >
-          Book a Strategy Consultation
+          Discuss a Project
         </Button>
       }
       secondary={

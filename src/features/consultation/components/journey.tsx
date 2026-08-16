@@ -1,11 +1,11 @@
 import { Reveal } from "@/components/shared/reveal";
 
 const stages = [
-  { n: "01", title: "Understand", body: "Defining current roadblocks and patient drop-off points." },
-  { n: "02", title: "Experience", body: "Live walkthrough of your current digital entry points." },
-  { n: "03", title: "Opportunities", body: "Mapping the 'Low Hanging Fruit' vs Strategic Shifts." },
-  { n: "04", title: "Proposals", body: "Tailored recommendations for immediate trust building." },
-  { n: "05", title: "Next Steps", body: "Resource allocation and implementation roadmap." },
+  { n: "01", title: "Understand", body: "We learn how your organization actually operates today." },
+  { n: "02", title: "Map", body: "We trace the workflows, tools, and manual steps in play." },
+  { n: "03", title: "Opportunities", body: "We spot what's worth building, automating, or connecting." },
+  { n: "04", title: "Proposal", body: "A clear recommendation on what to build first, and why." },
+  { n: "05", title: "Next Steps", body: "Scope, sequence, and a realistic path to implementation." },
 ];
 
 /**
@@ -14,15 +14,15 @@ const stages = [
  */
 export function Journey() {
   return (
-    <section className="py-unit-4xl bg-background">
+    <section className="py-unit-2xl md:py-unit-4xl bg-background">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="mb-unit-2xl">
           <h2 className="font-display text-4xl font-bold text-primary">
-            The Consultation Journey
+            The Discovery Process
           </h2>
           <p className="font-body text-on-surface-variant mt-4 max-w-2xl">
-            A structured 5-stage discovery process designed for healthcare
-            leadership.
+            A structured session that turns operational problems into a concrete
+            plan for what to build.
           </p>
         </Reveal>
 

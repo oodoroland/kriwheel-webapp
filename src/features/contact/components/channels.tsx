@@ -7,32 +7,32 @@ const channels = [
   {
     n: "02",
     title: "General Enquiry",
-    body: "For questions about Rocodeify, our services, or how we work.",
+    body: "For questions about Kriwheel, our services, or how we work.",
     action: { label: "Send an enquiry", href: "#enquiry" },
   },
   {
     n: "03",
     title: "Partnerships",
     body: "For organisations interested in collaboration, joint initiatives, or strategic partnerships.",
-    action: { label: "partnerships@rocodeify.com", href: "mailto:partnerships@rocodeify.com" },
+    action: { label: "partnerships@kriwheel.com", href: "mailto:partnerships@kriwheel.com" },
   },
   {
     n: "04",
     title: "Media & Speaking",
     body: "For interviews, podcasts, conferences, webinars, or speaking engagements.",
-    action: { label: "media@rocodeify.com", href: "mailto:media@rocodeify.com" },
+    action: { label: "media@kriwheel.com", href: "mailto:media@kriwheel.com" },
   },
   {
     n: "05",
     title: "Existing Clients",
     body: "Support for ongoing engagements and project communication.",
-    action: { label: "clients@rocodeify.com", href: "mailto:clients@rocodeify.com" },
+    action: { label: "clients@kriwheel.com", href: "mailto:clients@kriwheel.com" },
   },
 ];
 
 export function Channels() {
   return (
-    <section className="py-unit-4xl bg-background relative overflow-hidden">
+    <section className="py-unit-2xl md:py-unit-4xl bg-background relative overflow-hidden">
       <div className="absolute inset-0 blueprint-grid opacity-40 pointer-events-none" />
       <div className="max-w-container-max mx-auto px-gutter relative z-10">
         <Reveal className="mb-unit-2xl">
@@ -61,17 +61,18 @@ export function Channels() {
                   01 — Recommended
                 </span>
                 <h3 className="font-display text-2xl md:text-3xl font-bold text-white mt-4 mb-3">
-                  Strategy Consultation
+                  Start a Project
                 </h3>
                 <p className="text-white/60 leading-relaxed">
-                  For healthcare organisations seeking strategic guidance.
+                  For healthcare organisations that want to build, automate, or
+                  connect their systems.
                 </p>
               </div>
               <Link
                 href="/consultation"
                 className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-display font-bold px-10 py-5 rounded-eight shadow-2xl shadow-secondary/20 hover:scale-105 transition-all shrink-0"
               >
-                Book Consultation
+                Discuss a Project
                 <Icon name="arrow_forward" className="text-lg" />
               </Link>
             </div>

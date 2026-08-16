@@ -13,9 +13,9 @@ import {
 } from "@/features/consultation";
 
 export const metadata: Metadata = {
-  title: "Book Strategy Consultation",
+  title: "Discuss a Project",
   description:
-    "Request your Digital Patient Journey™ Audit. A structured strategy session for healthcare leaders — diagnose the digital friction costing you patient trust.",
+    "Book a discovery call with Kriwheel. In one focused session we map where manual work and disconnected systems are slowing your healthcare operations — and what to build, automate, or connect first.",
 };
 
 export default function ConsultationPage() {

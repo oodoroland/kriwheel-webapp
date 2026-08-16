@@ -3,27 +3,27 @@ import { Reveal } from "@/components/shared/reveal";
 
 const blocks = [
   {
-    icon: "analytics",
-    title: "Intelligence Matrix",
-    body: "Our proprietary tool for scoring clinical value vs. implementation complexity.",
+    icon: "hub",
+    title: "Systems thinking",
+    body: "We consider how every part of your operation connects — not just the feature in front of us.",
   },
   {
-    icon: "hub",
-    title: "Workflow Synchronization",
-    body: "Aligning EHR capabilities with modern patient expectations seamlessly.",
+    icon: "code",
+    title: "Engineering depth",
+    body: "We build the underlying systems, not just configure someone else's tool.",
   },
 ];
 
-const bars = ["75%", "40%", "90%"];
+const bars = ["70%", "45%", "88%"];
 
 export function Evidence() {
   return (
-    <section id="evidence" className="py-unit-4xl bg-primary text-white overflow-hidden">
+    <section id="evidence" className="py-unit-2xl md:py-unit-4xl bg-primary text-white overflow-hidden">
       <div className="max-w-container-max mx-auto px-gutter">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <Reveal>
             <h2 className="font-display text-4xl font-bold mb-8">
-              The Evidence of Excellence.
+              Why teams trust what we build.
             </h2>
             <div className="space-y-4">
               {blocks.map((block) => (
@@ -51,10 +51,10 @@ export function Evidence() {
               <div className="absolute inset-0 method-grid opacity-10" />
               <div className="flex justify-between items-center relative z-10">
                 <span className="font-mono text-[10px] tracking-widest uppercase opacity-40">
-                  System Diagnostics
+                  How We Build
                 </span>
                 <span className="px-2 py-1 bg-secondary/20 rounded text-secondary font-mono text-[10px]">
-                  LIVE_PREVIEW
+                  ARCHITECTURE
                 </span>
               </div>
               <div className="flex-1 flex items-center justify-center relative z-10">
@@ -74,12 +74,12 @@ export function Evidence() {
               </div>
               <div className="grid grid-cols-2 gap-4 relative z-10">
                 <div className="p-4 bg-white/5 rounded-eight border border-white/5">
-                  <p className="text-[10px] opacity-40 mb-1">EFFICIENCY</p>
-                  <p className="font-mono text-xl">84.2%</p>
+                  <p className="text-[10px] opacity-40 mb-1">SECURITY</p>
+                  <p className="font-mono text-xl">Built in</p>
                 </div>
                 <div className="p-4 bg-white/5 rounded-eight border border-white/5">
-                  <p className="text-[10px] opacity-40 mb-1">ADOPTION</p>
-                  <p className="font-mono text-xl">+120%</p>
+                  <p className="text-[10px] opacity-40 mb-1">CODE</p>
+                  <p className="font-mono text-xl">Yours</p>
                 </div>
               </div>
             </div>

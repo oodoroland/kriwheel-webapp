@@ -6,14 +6,9 @@ import { useEffect, useState } from "react";
 
 import { Button } from "@/components/shared/button";
 import { Icon } from "@/components/shared/icon";
+import { siteConfig } from "@/config/site";
 
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Our Approach", href: "/method" },
-  { label: "About", href: "/about" },
-  { label: "Talk to Us", href: "/consultation" },
-  { label: "Contact", href: "/contact" },
-];
+const navLinks = siteConfig.nav;
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,7 +43,8 @@ export function SiteHeader() {
           href="/"
           className="font-display text-2xl font-extrabold tracking-tighter text-primary"
         >
-          Zeenom<span className="text-secondary">™</span>
+          {siteConfig.name}
+          <span className="text-secondary">™</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-unit-xl">
@@ -74,10 +70,10 @@ export function SiteHeader() {
           <Button
             variant="primary"
             size="sm"
-            href="/consultation"
+            href={siteConfig.cta.href}
             className="hidden sm:inline-flex"
           >
-            GET STRATEGY
+            {siteConfig.cta.label}
           </Button>
 
           <button
@@ -119,11 +115,11 @@ export function SiteHeader() {
           <Button
             variant="primary"
             size="sm"
-            href="/consultation"
+            href={siteConfig.cta.href}
             onClick={() => setMenuOpen(false)}
             className="mt-unit-sm w-full"
           >
-            GET STRATEGY
+            {siteConfig.cta.label}
           </Button>
         </div>
       </div>

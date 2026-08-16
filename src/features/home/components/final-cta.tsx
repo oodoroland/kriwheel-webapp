@@ -10,11 +10,11 @@ export function FinalCta() {
       id="consultation"
       title={
         <>
-          Let’s Explore What’s{" "}
-          <span className="text-secondary italic">Possible</span> Together.
+          Let’s build the system your{" "}
+          <span className="text-secondary italic">operations</span> need.
         </>
       }
-      description="Take the first step toward clinical clarity. Schedule a 45-minute diagnostic session with our strategy team."
+      description="Tell us where the manual work and disconnected tools are slowing you down. We’ll help you map what to build first — no obligation."
       action={
         <Button
           variant="accent"
@@ -22,7 +22,7 @@ export function FinalCta() {
           href="/consultation#booking"
           className="w-full sm:w-auto"
         >
-          Request Strategy Call
+          Discuss a Project
         </Button>
       }
       secondary={

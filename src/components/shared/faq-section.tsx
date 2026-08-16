@@ -65,7 +65,7 @@ export function FaqSection({ eyebrow, heading, items, cta }: FaqSectionProps) {
   };
 
   return (
-    <section className="py-unit-4xl bg-surface-container/30">
+    <section className="py-unit-2xl md:py-unit-4xl bg-surface-container/30">
       <div className="max-w-5xl mx-auto px-gutter">
         <Reveal className="text-center mb-16">
           {eyebrow && (

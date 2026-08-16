@@ -54,7 +54,7 @@ export function EnquiryForm() {
   const submitting = status === "submitting";
 
   return (
-    <section id="enquiry" className="py-unit-4xl bg-background">
+    <section id="enquiry" className="py-unit-2xl md:py-unit-4xl bg-background">
       <div className="max-w-3xl mx-auto px-gutter">
         <Reveal className="text-center mb-unit-2xl">
           <span className="font-mono text-xs font-bold text-secondary uppercase tracking-widest">
@@ -64,8 +64,8 @@ export function EnquiryForm() {
             Send a General Enquiry
           </h2>
           <p className="text-on-surface-variant mt-4">
-            For strategic guidance, booking a consultation is the better path.
-            For everything else, this reaches us directly.
+            For a project, booking a discovery call is the better path. For
+            everything else, this reaches us directly.
           </p>
         </Reveal>
 
@@ -90,7 +90,7 @@ export function EnquiryForm() {
                   href="/method"
                   className="mt-2 flex items-center gap-2 font-mono text-xs font-bold text-secondary hover:text-primary uppercase tracking-widest transition-colors"
                 >
-                  Explore the Rocodeify Method
+                  Explore the Kriwheel Method
                   <Icon name="arrow_forward" className="text-sm" />
                 </Link>
               </div>

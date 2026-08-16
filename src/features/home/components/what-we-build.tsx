@@ -3,51 +3,48 @@ import Link from "next/link";
 import { Icon } from "@/components/shared/icon";
 import { Reveal } from "@/components/shared/reveal";
 
-const cases = [
+const builds = [
   {
-    alt: "Clinical precision",
+    badge: "Build",
     src: "/images/hospital1.jpg",
-    badge: "+180% INQUIRY GROWTH",
-    title: "St. Jude Medical Center",
-    body: "Re-architecting the high-intent patient journey for specialized orthopedic care.",
+    title: "Clinic & Hospital Operations",
+    body: "Platforms that run scheduling, records, and day-to-day workflows in one connected place.",
     delay: 0,
   },
   {
-    alt: "Modern medical office",
+    badge: "Automate",
     src: "/images/hospital2.jpg",
-    badge: "40% CAC REDUCTION",
-    title: "OrthoOne Specialty",
-    body: "Implementing data-driven attribution models for regional expansion.",
+    title: "Automated Patient Communication",
+    body: "Reminders, follow-ups, and updates that run on their own instead of by hand.",
     delay: 200,
   },
   {
-    alt: "Tech lab",
+    badge: "Connect",
     src: "/images/hospital3.jpg",
-    badge: "65% FORM COMPLETION",
-    title: "HealthSpan Institute",
-    body: "Eliminating registration friction through behavioral UX science.",
+    title: "Connected Systems & Integrations",
+    body: "Payments, labs, pharmacy, and records synced so information moves without re-entry.",
     delay: 400,
   },
 ];
 
-export function CaseStudies() {
+export function WhatWeBuild() {
   return (
     <section id="cases" className="py-unit-2xl md:py-unit-4xl bg-white">
       <div className="max-w-container-max mx-auto px-gutter">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-unit-md mb-unit-2xl md:mb-unit-3xl">
           <div className="max-w-xl">
             <span className="text-secondary font-mono text-xs tracking-widest uppercase font-bold mb-4 block">
-              Proven Outcomes
+              What We Build
             </span>
             <h2 className="font-display text-4xl md:text-5xl text-primary font-bold tracking-tight">
-              Clinical Success Stories.
+              Systems we design and ship.
             </h2>
           </div>
           <Link
-            href="/method"
+            href="/consultation"
             className="text-primary font-bold flex items-center gap-2 hover:text-secondary transition-colors pb-2 border-b-2 border-primary/10 group shrink-0"
           >
-            Explore Methodology{" "}
+            Discuss a project{" "}
             <Icon
               name="arrow_forward"
               className="group-hover:translate-x-1 transition-transform"
@@ -56,7 +53,7 @@ export function CaseStudies() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-unit-md">
-          {cases.map((item) => (
+          {builds.map((item) => (
             <Reveal
               key={item.title}
               delay={item.delay}
@@ -64,7 +61,7 @@ export function CaseStudies() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt={item.alt}
+                alt={item.title}
                 src={item.src}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
               />
@@ -76,7 +73,7 @@ export function CaseStudies() {
                 <h4 className="font-display text-2xl font-bold mb-2">
                   {item.title}
                 </h4>
-                <p className="text-white/60 text-sm line-clamp-2">{item.body}</p>
+                <p className="text-white/70 text-sm">{item.body}</p>
               </div>
             </Reveal>
           ))}

@@ -13,11 +13,11 @@ export function ContactHero() {
           <span className="text-secondary italic">Right Conversation</span>
         </>
       }
-      description="Every conversation begins differently. Whether you have a question, a partnership opportunity, a media enquiry, or wish to discuss healthcare digital strategy, we’re glad to hear from you."
+      description="Every conversation begins differently. Whether you have a question, a partnership opportunity, a media enquiry, or a software or automation project in mind, we’re glad to hear from you."
       actions={
         <>
           <Button variant="accent" href="/consultation">
-            Book Strategy Consultation
+            Discuss a Project
           </Button>
           <Button variant="ghost" href="#enquiry">
             Send a General Enquiry

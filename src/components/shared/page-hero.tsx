@@ -30,7 +30,7 @@ export function PageHero({
   scrollLabel = "Scroll to Explore",
 }: PageHeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary">
+    <section className="relative min-h-screen flex items-center pt-28 pb-24 overflow-hidden bg-primary">
       <div className="absolute inset-0 opacity-40 mix-blend-screen pointer-events-none">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -49,7 +49,7 @@ export function PageHero({
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.1] md:leading-[1.05] text-on-primary font-bold tracking-tight">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] md:leading-[1.08] text-on-primary font-bold tracking-tight text-balance">
             {title}
           </h1>
 

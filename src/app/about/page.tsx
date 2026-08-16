@@ -15,9 +15,9 @@ import {
 } from "@/features/about";
 
 export const metadata: Metadata = {
-  title: "About Rocodeify",
+  title: "About",
   description:
-    "We bridge the gap between world-class medical expertise and fragmented digital experiences — intelligence before creativity.",
+    "Kriwheel is a healthcare technology company. We build software, automate workflows, and connect the systems healthcare organizations depend on.",
 };
 
 export default function AboutPage() {

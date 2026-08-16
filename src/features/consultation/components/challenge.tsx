@@ -3,18 +3,18 @@ import { Reveal } from "@/components/shared/reveal";
 const frictions = [
   {
     n: "01",
-    title: "Low Enquiries",
-    body: "Traffic exists, but conversion into actual patients is stagnant or declining.",
+    title: "Fragmented systems",
+    body: "Tools that don't talk to each other, so information gets re-entered by hand.",
   },
   {
     n: "02",
-    title: "Fragmented Trust",
-    body: "Referral quality is dropping because your online presence looks outdated.",
+    title: "Repetitive manual work",
+    body: "Staff spending hours on tasks software could handle reliably.",
   },
   {
     n: "03",
-    title: "Digital Friction",
-    body: "Administrative staff are overwhelmed by fixing manual entry errors from bad UX.",
+    title: "No operational visibility",
+    body: "Management can't easily see what's actually happening day to day.",
   },
 ];
 
@@ -24,7 +24,7 @@ const frictions = [
  */
 export function Challenge() {
   return (
-    <section className="py-unit-4xl bg-primary relative overflow-hidden">
+    <section className="py-unit-2xl md:py-unit-4xl bg-primary relative overflow-hidden">
       <div className="absolute inset-0 method-grid opacity-5" />
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full"
@@ -43,9 +43,9 @@ export function Challenge() {
             Why Organizations Start Here
           </h2>
           <p className="text-white/60 text-lg mb-12 max-w-xl">
-            Clinical excellence alone is no longer enough. If your digital entry
-            point doesn’t mirror your surgical precision, you’re losing trust
-            before the first appointment.
+            Most teams don’t need more software — they need their systems to work
+            together. That starts with understanding where the friction actually
+            is.
           </p>
 
           <div className="space-y-6">
@@ -80,15 +80,15 @@ export function Challenge() {
             />
           </div>
           <div className="absolute -bottom-8 -left-8 bg-white rounded-eight p-8 max-w-xs shadow-2xl">
-            <div className="font-mono text-xs font-bold text-secondary uppercase tracking-widest mb-2">
-              Key Metric
+            <div className="font-mono text-xs font-bold text-secondary uppercase tracking-widest mb-3">
+              Our Role
             </div>
-            <div className="font-display text-5xl font-bold text-primary mb-2">
-              4.2x
+            <div className="font-display text-2xl font-bold text-primary mb-2">
+              Connect. Automate. Improve.
             </div>
             <p className="text-sm text-on-surface-variant leading-relaxed">
-              Increase in patient engagement when digital trust markers are
-              correctly positioned.
+              We turn complicated healthcare workflows into reliable digital
+              systems.
             </p>
           </div>
         </Reveal>

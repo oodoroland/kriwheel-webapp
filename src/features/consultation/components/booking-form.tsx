@@ -53,16 +53,17 @@ export function BookingForm() {
   const submitting = status === "submitting";
 
   return (
-    <section id="booking" className="py-unit-4xl bg-background">
+    <section id="booking" className="py-unit-2xl md:py-unit-4xl bg-background">
       <div className="max-w-4xl mx-auto px-gutter">
         <Reveal>
           <div className="bg-white rounded-eight border border-outline-variant/30 shadow-xl p-unit-xl md:p-unit-2xl">
             <div className="text-center mb-unit-xl">
               <h2 className="font-display text-4xl font-bold text-primary">
-                Strategic Entry Point
+                Tell Us About Your Project
               </h2>
               <p className="text-on-surface-variant mt-4">
-                Request your Digital Patient Journey™ Audit
+                Share where the friction is — we’ll help you map what to build
+                first.
               </p>
             </div>
 
@@ -149,7 +150,7 @@ export function BookingForm() {
                 <div className="space-y-6">
                   <div>
                     <label className={labelClasses} htmlFor="objective">
-                      Primary Objective
+                      What do you need?
                     </label>
                     <div className="relative">
                       <select
@@ -157,10 +158,10 @@ export function BookingForm() {
                         name="objective"
                         className={`${inputClasses} appearance-none pr-12 cursor-pointer`}
                       >
-                        <option>Audit Existing Platform</option>
-                        <option>Strategic Rebranding</option>
-                        <option>Patient Journey Redesign</option>
-                        <option>Other</option>
+                        <option>Build custom software</option>
+                        <option>Automate a workflow</option>
+                        <option>Connect / integrate systems</option>
+                        <option>Not sure yet — let’s talk</option>
                       </select>
                       <Icon
                         name="expand_more"
@@ -170,13 +171,13 @@ export function BookingForm() {
                   </div>
                   <div>
                     <label className={labelClasses} htmlFor="context">
-                      Strategic Context
+                      What’s slowing you down?
                     </label>
                     <textarea
                       id="context"
                       name="context"
                       rows={4}
-                      placeholder="Tell us about your current friction points…"
+                      placeholder="Spreadsheets, manual follow-ups, systems that don’t talk…"
                       className={inputClasses}
                     />
                   </div>
@@ -186,7 +187,7 @@ export function BookingForm() {
                     className="w-full disabled:opacity-60 disabled:cursor-not-allowed"
                     disabled={submitting}
                   >
-                    {submitting ? "Sending…" : "Request Consultation"}
+                    {submitting ? "Sending…" : "Request a Call"}
                   </Button>
                   {status === "error" && (
                     <p className="text-error-crimson text-sm text-center">
@@ -215,7 +216,7 @@ export function BookingForm() {
         open={modalOpen}
         onClose={() => setModalOpen(false)}
         title="Request received"
-        message="Thank you. A senior strategist will reach out within two business days to schedule your session."
+        message="Thank you. Someone from our team will reach out within two business days to talk through your project."
       />
     </section>
   );

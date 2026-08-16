@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROCODEIFY | Precision Engineering for Healthcare Clinics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blueprint-grid {
+            background-size: 40px 40px;
+            background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+        }
+        .technical-border {
+            border: 1px solid #E2E8F0;
+        }
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #4b5e87, transparent);
+            position: absolute;
+            animation: scan 4s linear infinite;
+        }
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#b3c6f5",
+                      "on-error-container": "#93000a",
+                      "error": "#ba1a1a",
+                      "on-primary-fixed-variant": "#33466e",
+                      "error-container": "#ffdad6",
+                      "tertiary-container": "#002819",
+                      "on-error": "#ffffff",
+                      "tertiary": "#000f07",
+                      "on-secondary-fixed": "#111c2c",
+                      "on-background": "#191c1e",
+                      "on-tertiary-fixed": "#002113",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f7f9fb",
+                      "surface-variant": "#e0e3e5",
+                      "surface-container-low": "#f2f4f6",
+                      "on-secondary-fixed-variant": "#3c475a",
+                      "secondary-container": "#d5e0f7",
+                      "on-tertiary-fixed-variant": "#005236",
+                      "tertiary-fixed-dim": "#4edea3",
+                      "on-tertiary-container": "#009d6c",
+                      "inverse-surface": "#2d3133",
+                      "on-surface-variant": "#44474e",
+                      "surface-tint": "#4b5e87",
+                      "outline-variant": "#c5c6cf",
+                      "on-surface": "#191c1e",
+                      "tertiary-fixed": "#6ffbbe",
+                      "surface-dim": "#d8dadc",
+                      "primary-fixed": "#d8e2ff",
+                      "secondary-fixed-dim": "#bcc7dd",
+                      "primary-fixed-dim": "#b3c6f5",
+                      "surface-container-high": "#e6e8ea",
+                      "surface-container-highest": "#e0e3e5",
+                      "secondary": "#545f72",
+                      "primary": "#000b25",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#eceef0",
+                      "background": "#f7f9fb",
+                      "on-primary-container": "#7789b5",
+                      "surface": "#f7f9fb",
+                      "on-primary-fixed": "#031a40",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-secondary-container": "#586377",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#0b2147",
+                      "on-tertiary": "#ffffff",
+                      "outline": "#75777f",
+                      "secondary-fixed": "#d8e3fa"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "md": "24px",
+                      "container-max": "1200px",
+                      "base": "4px",
+                      "sm": "16px",
+                      "xl": "80px",
+                      "gutter": "24px",
+                      "xs": "8px",
+                      "lg": "48px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Geist"],
+                      "headline-xl": ["Geist"],
+                      "headline-lg": ["Geist"],
+                      "headline-xl-mobile": ["Geist"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["JetBrains Mono"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["30px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary text-headline-md">precision_manufacturing</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-primary">ROCODEIFY</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-150" href="#methodology">Methodology</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-150" href="#framework">Framework</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-150" href="#case-study">Case Study</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-150" href="#about">About</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs font-label-sm uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all duration-200">
+                Request a Snapshot
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex flex-col justify-center blueprint-grid overflow-hidden">
+
+<div class="max-w-container-max mx-auto px-gutter relative z-10 py-xl">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-xs px-xs py-base bg-surface-container-low border border-outline-variant mb-md">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]">verified</span>
+<span class="font-label-sm text-on-tertiary-container uppercase">Precision Patient Acquisition</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl mb-md text-primary">
+                        More patients find you, trust you, and book — before they ever walk through your door.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg leading-relaxed">
+                        Rocodeify helps private clinics turn their online presence into a source of patient enquiries, not just a digital brochure. We research, build, and measure — so your clinic's digital front door works as hard as your practice does.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<button class="bg-primary text-on-primary px-lg py-sm font-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity">
+                            Request a Snapshot
+                        </button>
+<button class="border border-primary text-primary px-lg py-sm font-label-sm uppercase tracking-widest hover:bg-surface-container transition-colors">
+                            View Case Study
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- The Problem -->
+<section class="bg-surface py-xl border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">
+                            Most clinics don't have a website problem. They have a patient-trust problem.
+                        </h2>
+<div class="h-1 w-20 bg-primary mb-md"></div>
+</div>
+<div class="space-y-md">
+<div class="flex gap-md p-md bg-background border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-headline-md">search_off</span>
+<p class="font-body-md text-on-surface-variant">Patients find your site, but they leave as soon as they see an outdated design or confusing navigation.</p>
+</div>
+<div class="flex gap-md p-md bg-background border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-headline-md">share_off</span>
+<p class="font-body-md text-on-surface-variant">Referrals stall because your digital profile doesn't match the level of care you provide in person.</p>
+</div>
+<div class="flex gap-md p-md bg-background border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-headline-md">architecture</span>
+<p class="font-body-md text-on-surface-variant">A generic redesign won't fix this. Trust is built through a sequence of technical and psychological cues.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Framework -->
+<section class="py-xl bg-surface-bright" id="framework">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">The Digital Patient Trust Framework™</h2>
+<p class="font-body-md text-on-surface-variant">Every clinic engagement runs through the same five stages — because patient trust is built in a sequence, not a single design decision.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-md">
+<!-- Framework Step 1 -->
+<div class="technical-border p-md bg-surface relative overflow-hidden group">
+<div class="font-label-sm text-outline mb-sm">01</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Discover</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Where do they find you? Mapping the visibility gap from search to social.</p>
+<div class="mt-md pt-md border-t border-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-primary uppercase">Strategy focus</span>
+</div>
+</div>
+<!-- Framework Step 2 -->
+<div class="technical-border p-md bg-surface relative overflow-hidden group">
+<div class="font-label-sm text-outline mb-sm">02</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Understand</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Can they see you solve their specific pain? Clarifying the care value.</p>
+<div class="mt-md pt-md border-t border-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-primary uppercase">Messaging focus</span>
+</div>
+</div>
+<!-- Framework Step 3 -->
+<div class="technical-border p-md bg-surface relative overflow-hidden group">
+<div class="font-label-sm text-outline mb-sm">03</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Believe</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Is your clinic authoritative? Leveraging social proof and technical polish.</p>
+<div class="mt-md pt-md border-t border-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-primary uppercase">Authority focus</span>
+</div>
+</div>
+<!-- Framework Step 4 -->
+<div class="technical-border p-md bg-surface relative overflow-hidden group">
+<div class="font-label-sm text-outline mb-sm">04</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Act</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Removing friction from the booking process with high-performance UI.</p>
+<div class="mt-md pt-md border-t border-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-primary uppercase">Conversion focus</span>
+</div>
+</div>
+<!-- Framework Step 5 -->
+<div class="technical-border p-md bg-surface relative overflow-hidden group">
+<div class="font-label-sm text-outline mb-sm">05</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Measure</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Closing the loop with analytics to prove ROI on every patient lead.</p>
+<div class="mt-md pt-md border-t border-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-primary uppercase">Optimization focus</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Process -->
+<section class="py-xl bg-primary text-on-primary" id="methodology">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-xl">
+<h2 class="font-headline-lg text-headline-lg mb-sm text-primary-fixed">A repeatable method, not a one-off project.</h2>
+<p class="font-body-md text-on-primary-container max-w-2xl">Engineering excellence requires discipline. We don't guess; we follow a rigorous five-step operational cycle.</p>
+</div>
+<div class="space-y-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-on-primary-fixed-variant py-md group hover:bg-primary-container transition-colors px-md">
+<div class="md:col-span-1 font-label-sm text-on-primary-container">01</div>
+<div class="md:col-span-3 font-headline-md text-headline-md">Research</div>
+<div class="md:col-span-8 font-body-md text-on-primary-container">Auditing your competitors, your patients' search habits, and your current site performance.</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-on-primary-fixed-variant py-md group hover:bg-primary-container transition-colors px-md">
+<div class="md:col-span-1 font-label-sm text-on-primary-container">02</div>
+<div class="md:col-span-3 font-headline-md text-headline-md">Snapshot</div>
+<div class="md:col-span-8 font-body-md text-on-primary-container">A high-level diagnosis of where you are losing trust and where the growth opportunities lie.</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-on-primary-fixed-variant py-md group hover:bg-primary-container transition-colors px-md">
+<div class="md:col-span-1 font-label-sm text-on-primary-container">03</div>
+<div class="md:col-span-3 font-headline-md text-headline-md">Concept</div>
+<div class="md:col-span-8 font-body-md text-on-primary-container">Building the blueprints—wireframes and messaging strategy that prioritize the patient journey.</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-on-primary-fixed-variant py-md group hover:bg-primary-container transition-colors px-md">
+<div class="md:col-span-1 font-label-sm text-on-primary-container">04</div>
+<div class="md:col-span-3 font-headline-md text-headline-md">Build</div>
+<div class="md:col-span-8 font-body-md text-on-primary-container">Development focused on speed, security, and healthcare-grade reliability.</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 py-md group hover:bg-primary-container transition-colors px-md">
+<div class="md:col-span-1 font-label-sm text-on-primary-container">05</div>
+<div class="md:col-span-3 font-headline-md text-headline-md">Measure</div>
+<div class="md:col-span-8 font-body-md text-on-primary-container">Deploying tracking and analytics to ensure the new presence converts.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Study -->
+<section class="py-xl bg-surface" id="case-study">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+<div class="technical-border bg-white overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist 3D isometric representation of a healthcare dashboard. The interface uses a deep navy and white color scheme with safety green accents on success indicators. The aesthetic is clinical, technical, and precise, resembling high-end medical software with fine line details and data visualizations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGswlvLO_ILf0QzrUYKSaXnd932xAySjrAI8_V56QxXLoQ4pfPzTG_HqYAGx34SVwMwk5am8TsAMiRTSFt3ra84jHN5CERhrYttO_ihxyX9FOmmfze5ZKp9gYowGeX20XBLC3sdBfM49D29C9tzlA_jS2IrYdej-wYcPRatQJAntg4lrG3Rn7OVzLOm6jas0lw40tf72JMIdHP74C5sT5hy_fYWTx8V1eig8kMZwFjLWxKcJ-JYWpeYnt6FBgMEpxHM1qr9qemWBZy"/>
+<div class="absolute bottom-md left-md bg-primary text-on-primary px-sm py-xs font-label-sm">LIVE CASE STUDY</div>
+</div>
+<div class="p-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Petrous Specialist Clinic &amp; Diagnostic Services — a live example of the method.</h2>
+<p class="font-body-md text-on-surface-variant mb-md leading-relaxed">
+                                We began with research, not a mockup. By analyzing patient booking behavior at Petrous, we identified that trust was stalling at the 'Understand' stage. The resulting digital platform wasn't just a prettier site; it was a calibrated engine for specialist conversion.
+                            </p>
+<div class="grid grid-cols-2 gap-md border-t border-outline-variant pt-md">
+<div>
+<div class="font-label-sm text-outline uppercase mb-xs">Inquiry Growth</div>
+<div class="font-headline-md text-headline-md text-tertiary-fixed-dim">+42%</div>
+</div>
+<div>
+<div class="font-label-sm text-outline uppercase mb-xs">Trust Score</div>
+<div class="font-headline-md text-headline-md text-tertiary-fixed-dim">9.8/10</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<div class="technical-border p-lg mb-md bg-white">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Why Rocodeify</h3>
+<div class="space-y-md">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<div>
+<div class="font-bold text-primary">Technical Ownership</div>
+<p class="font-body-md text-on-surface-variant text-sm">Not a designer. Not a reseller. An operator who ships and owns what he builds.</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">psychology</span>
+<div>
+<div class="font-bold text-primary">Consultative Methodology</div>
+<p class="font-body-md text-on-surface-variant text-sm">Strategist-led development that focuses on business outcomes, not just aesthetics.</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">medical_services</span>
+<div>
+<div class="font-bold text-primary">Healthcare Insight</div>
+<p class="font-body-md text-on-surface-variant text-sm">Deep understanding of patient psychology and clinical privacy requirements.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About -->
+<section class="py-xl bg-surface-bright" id="about">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-5">
+<div class="technical-border p-xs bg-white">
+<img class="w-full grayscale contrast-125" data-alt="A professional, high-contrast portrait of a tech-focused operator in a modern workspace. The lighting is focused and clean, emphasizing a serious, technical posture. The background features subtle architectural elements and medical hardware silhouettes. The color palette is strictly navy, slate, and white, matching the precision healthcare brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc0yrdBjZnLcM3ItBKbRO5biwM8ThOcD3NGa7WyJSWuADYssGS1ZhxqqxgLVnpIAZrqqp9JEneMS0W52s8y6gZ2wkEMdq_y5ixQIagN9rY9s0vmY-oDXCHntkt4MijALEV57-yQcHMnvJzPfC2zvMmMbBYSqrRLnK3jaXKWfsheSYqzsR5KY_lWiRwEB-T_2QT6qibfjeXdl6GcXwTHJ2pkVeRTMrA0897Bw9_Ntjm_PhLJ2mzNeBE4s7k3e3rWBmLqJLEwNQIcOmy"/>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="font-label-sm text-primary uppercase tracking-widest mb-xs">The Founder</div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-md">Built by a developer, run like a strategist.</h2>
+<p class="font-body-lg text-on-surface-variant mb-md">
+                            Roland Oodo is more than a developer. With a background in technical operations and a passion for engineering excellence in healthcare, he founded Rocodeify to bridge the gap between clinical expertise and digital presence. 
+                        </p>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            Rocodify isn't a creative agency; it's a precision engineering practice for the digital layer of healthcare. Roland personally oversees every project, ensuring that the code is as reliable as the medical care it represents.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-xl bg-primary text-on-primary relative overflow-hidden">
+<div class="scanline"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center py-lg">
+<h2 class="font-headline-xl text-headline-xl mb-md">Not sure where your clinic's digital presence is losing patients?</h2>
+<p class="font-body-lg text-body-lg mb-lg max-w-3xl mx-auto text-on-primary-container">
+                    A Growth Snapshot is a short, research-based look at your current digital performance and a clear roadmap for improvement. No fluff, just technical data.
+                </p>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-lg py-sm font-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity">
+                    Request a Growth Snapshot
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant py-xl">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-md">
+<div>
+<div class="flex items-center gap-base mb-md">
+<span class="material-symbols-outlined text-primary text-headline-md">precision_manufacturing</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-primary">ROCODEIFY</span>
+</div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest">Engineering Excellence in Healthcare.</p>
+</div>
+<div class="flex flex-col md:items-end gap-sm">
+<div class="flex flex-wrap gap-md">
+<a class="font-label-sm text-on-surface-variant hover:text-primary underline" href="#">Privacy Policy</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary underline" href="#">Terms of Service</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary underline" href="#">Contact</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary underline" href="#">LinkedIn</a>
+</div>
+<p class="font-label-sm text-on-surface-variant">© 2024 Rocodeify. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple visibility observer for framework items
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.technical-border').forEach(el => {
+            el.classList.add('transition-all', 'duration-700');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

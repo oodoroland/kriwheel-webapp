@@ -8,49 +8,45 @@ import { Reveal } from "@/components/shared/reveal";
 const stages = [
   {
     n: "01",
-    title: "Research & Audit",
-    purpose: "To uncover the invisible frictions slowing down clinical teams.",
-    deliverable: "Friction Map",
-    impact: "90% Clarity",
+    title: "Understand",
+    purpose: "We map how your organization actually operates — the people, steps, and handoffs.",
+    deliverable: "Workflow Map",
+    impact: "Shared clarity",
   },
   {
     n: "02",
-    title: "Clinical Diagnosis",
-    purpose:
-      "Separating critical blockers from minor aesthetic inconveniences.",
-    deliverable: "ROI Matrix",
-    impact: "Value Prioritized",
+    title: "Design",
+    purpose: "We design systems around your workflows, not the other way round.",
+    deliverable: "System Blueprint",
+    impact: "Aligned scope",
   },
   {
     n: "03",
-    title: "Strategic Roadmap",
-    purpose: "Defining the “Digital North Star” for the next 3 to 5 years.",
-    deliverable: "Implementation Blueprint",
-    impact: "Aligned Teams",
+    title: "Build",
+    purpose: "We engineer software that holds up under real operational load.",
+    deliverable: "Working software",
+    impact: "Fit for reality",
   },
   {
     n: "04",
-    title: "Patient DX Design",
-    purpose:
-      "Building trust and reducing uncertainty at every digital touchpoint.",
-    deliverable: "Trust Framework",
-    impact: "Lower Anxiety",
+    title: "Automate",
+    purpose: "We replace the repetitive manual work slowing your team down.",
+    deliverable: "Automated workflows",
+    impact: "Time returned",
   },
   {
     n: "05",
-    title: "Precision Build",
-    purpose:
-      "Modular, scalable systems that bridge the gap between cold tech and warm care.",
-    deliverable: "Unified Tech Stack",
-    impact: "Future Proof",
+    title: "Integrate",
+    purpose: "We connect the tools and data you already depend on.",
+    deliverable: "Connected systems",
+    impact: "No re-entry",
   },
   {
     n: "06",
-    title: "Continuous Evolution",
-    purpose:
-      "Long-term monitoring and optimization based on real-world usage patterns.",
-    deliverable: "Optimization Log",
-    impact: "Sustainable Growth",
+    title: "Support",
+    purpose: "We keep systems reliable and evolving as your organization grows.",
+    deliverable: "Ongoing support",
+    impact: "Built to last",
   },
 ];
 
@@ -58,18 +54,18 @@ export function Framework() {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="methodology" className="py-unit-4xl bg-white method-grid">
+    <section id="methodology" className="py-unit-2xl md:py-unit-4xl bg-white method-grid">
       <div className="max-w-container-max mx-auto px-gutter">
         <Reveal className="max-w-3xl mb-20">
           <span className="font-mono text-xs font-bold text-secondary uppercase tracking-widest">
-            Signature Framework
+            The Framework
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-4 mb-6">
-            An Interactive Strategic Engine.
+            Six stages, from problem to working system.
           </h2>
           <p className="text-on-surface-variant">
-            Explore the six stages of transformation. Each stage is designed to
-            provide actionable business and patient impact.
+            Tap any stage. Each one turns an operational problem into something
+            your team can rely on.
           </p>
         </Reveal>
 
@@ -130,7 +126,7 @@ export function Framework() {
                       </div>
                       <div className="p-4 bg-background rounded-eight">
                         <p className="text-[10px] font-bold text-on-surface-variant uppercase mb-1">
-                          Impact
+                          Outcome
                         </p>
                         <p className="text-xs font-bold">{stage.impact}</p>
                       </div>

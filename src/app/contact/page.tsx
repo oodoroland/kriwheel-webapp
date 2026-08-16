@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Start the right conversation with Rocodeify — general enquiries, partnerships, media & speaking, and existing-client support. For strategic guidance, book a Strategy Consultation.",
+    "Start the right conversation with Kriwheel — general enquiries, partnerships, media & speaking, and existing-client support. To start a software or automation project, book a discovery call.",
 };
 
 export default function ContactPage() {

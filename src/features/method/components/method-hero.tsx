@@ -5,23 +5,25 @@ export function MethodHero() {
   return (
     <PageHero
       image="/images/screen.png"
-      eyebrow="The Rocodeify Method™ v2.0"
+      eyebrow="Our Approach"
       scrollLabel="Scroll to Begin"
       title={
         <>
-          Intelligence{" "}
-          <span className="text-secondary italic font-medium">Before</span>{" "}
-          Creativity.
+          From workflow to{" "}
+          <span className="text-secondary italic font-medium">
+            working system
+          </span>
+          .
         </>
       }
-      description="A precision-engineered consulting framework designed to eliminate clinical friction and accelerate digital patient adoption."
+      description="A practical, engineering-led approach to building software that fits how healthcare teams actually operate — and keeps working long after launch."
       actions={
         <>
           <Button variant="accent" href="#methodology">
             Explore the Framework
           </Button>
           <Button variant="ghost" href="#evidence">
-            See the Evidence
+            Why It Works
           </Button>
         </>
       }
